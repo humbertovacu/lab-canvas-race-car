@@ -98,25 +98,7 @@ window.onload = () => {
       this.x = x;
       this.y = y;
     }
-    
 
-    // randomWidth(){
-    //   let minWidth = 20;
-    //   let maxWidth = 400;
-    //   this.width = Math.floor(Math.random()*maxWidth-minWidth+1)+minWidth;
-    //   return this.width;
-    // }
-
-    // randomX(){
-    //   let maxValueOfX = 100;
-    //   this.x = Math.floor(Math.random()*maxValueOfX + 1)
-    //   return this.x;
-    // }
-
-    // obstacle() {
-    //   ctx.fillStyle = 'red';
-    //   ctx.fillRect(this.randomWidth(),100,this.randomX(),10)
-    // }
 
     update(){
       ctx.fillStyle = 'red';
@@ -124,21 +106,8 @@ window.onload = () => {
     }    
   }
 
-  // let testObstacle = new Obstacle;
-
   let myObstacles = [];
 
-  // function createObstacles(){
-  //   myObstacles.push(new Obstacle);
-  //   for (let i = 0; i < myObstacles.length; i++){
-  //     let tempObstacle = myObstacles[i].obstacle();
-  //     return tempObstacle;
-  //   }
-  //   for (let i = 0; i<myObstacles.length;i++){
-  //     myObstacles[i].y-=1;  
-  //   }
-  //   myObstacles[i].update();
-  // }
 
   function updateObstacles(){
     frames += 1;
@@ -159,7 +128,6 @@ window.onload = () => {
     }
    
   }
-
 
 };
   
