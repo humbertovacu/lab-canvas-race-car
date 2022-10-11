@@ -11,8 +11,13 @@ window.onload = () => {
     background();
     setInterval(updateCanvas,20);
     gameCar.draw();
-    
-  }  
+  } 
+
+  function pointText(){
+    ctx.font = '14px serif';
+    ctx.fillText(`Points: ${Math.floor(frames/10)}`, 100, 100);
+  }
+
 
   function background() {
     const background = new Image();
@@ -65,6 +70,7 @@ window.onload = () => {
     background();
     updateObstacles();
     gameCar.draw();
+    pointText();
     
   }
 
